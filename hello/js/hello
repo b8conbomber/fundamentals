@@ -1,7 +1,0 @@
-#!/usr/bin/env node
-
-var out = process.stdout;
-var c = require("skilstak-colors");
-
-
-out.write(c.cl + c.rc() + "Hello, World!\n");
