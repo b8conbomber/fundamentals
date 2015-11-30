@@ -20,18 +20,18 @@ def print_multi(message):
         time.sleep(0.5)
 
 def parse_args():
-    import sys
+    from sys import argv
     
-    who = "World"
+    name = "World"
     option = ""
 
-    if len(sys.argv) > 2:
-        option = sys.argv[1]
-        who = sys.argv[2]
-    elif len(sys.argv) == 2:
-        if sys.argv[1].startswith("-"):
-           option = sys.argv[1]
+    if len(argv) > 2:
+        option = argv[1]
+        name = argv[2]
+    elif len(argv) == 2:
+        if argv[1].startswith("-"):
+           option = argv[1]
         else:
-            "who = sys.argv[1]
+            name = argv[1]
 
-    return p
+    return name, option
