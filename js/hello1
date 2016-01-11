@@ -1,0 +1,21 @@
+#!/usr/bin/env node 
+
+'use strict';
+
+var c = require("skilstak-colors");       
+
+//function printPlain() {
+//  console.log(c.clear + c.x + "Hello, World");
+// }
+
+var printPlain = function () {
+  console.log(c.clear + c.x + "Hello, World");
+}
+
+var printRed = function () {
+  console.log(c.clear + c.x + c.red + "Hello, World");
+}
+
+var printRandom = function () {
+   console.log(c.clear + c.x + c.rc + "Hello, World");
+} 
