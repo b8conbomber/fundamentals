@@ -18,4 +18,6 @@ var printRed = function () {
 
 var printRandom = function () {
    console.log(c.clear + c.x + c.rc + "Hello, World");
-} 
+}
+
+printPlain();
