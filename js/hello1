@@ -20,4 +20,8 @@ var printRandom = function () {
    console.log(c.clear + c.x + c.rc + "Hello, World");
 }
 
+var printMulti = function () {
+  console.log(c.clear + c.multi("Hello, World"));
+}
+
 printPlain();
