@@ -24,8 +24,18 @@ var printMulti = function (message) {
   console.log(c.clear + c.multi("Hello" + message));
 }
 
-var name = process.argv[2];
+var firstValue = process.argv[2];
+var name = "World";
+var option = "-m";
 
+if (firstValue[0] === "-") {
+  option = firstValue;
+  console.log("Hello world"  + option)
+}
+if (option === "-r") {
+  printRandom(name);
+}
+  
 printPlain(name);
 printRed(name);
 printRandom(name);
